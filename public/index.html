@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>tlpt-planner</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>tlpt-planner</h1>
+    <p class="sub">Plan a DORA threat-led penetration test. Enter the notification date and your situation; get a dated schedule from the RTS 2025/1190 phases, a readiness checklist and cycle checks. Runs in this tab, nothing is uploaded.</p>
+  </div>
+  <div class="row"><button type="button" data-sample="bank.json">Bank sample (late)</button><button type="button" data-sample="ready.json">Insurer sample (fits)</button></div>
+</header>
+<main>
+  <div class="panel">
+    <h2>Entity profile (JSON)</h2>
+    <textarea id="profile" rows="22" spellcheck="false"></textarea>
+    <p class="hint">Dates are YYYY-MM-DD. Fields marked as assumption in the schedule come from the "planning" block, change them to match your providers. Verify RTS deadlines against the Official Journal and your authority's instructions.</p>
+  </div>
+  <div id="out"></div>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

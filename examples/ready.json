@@ -1,0 +1,10 @@
+{
+  "entity": "Aseguradora Ejemplo",
+  "notification": "2027-01-11",
+  "lastTlptEnd": "2026-03-31",
+  "completedTests": 0,
+  "internalTesters": false,
+  "criticalFunctions": [{ "name": "Claims payment", "systems": ["claims-core"], "thirdParties": ["CloudCo"] }],
+  "thirdParties": [{ "name": "CloudCo", "critical": true, "inScope": true, "contractAllowsTesting": true, "pooledTestingPossible": true }],
+  "readiness": { "controlTeamLead": true, "projectCharter": true, "riskManagementPlan": true, "tiProviderProcured": true, "redTeamProcured": true, "legalReviewDone": true, "criticalFunctionsMapped": true, "blueTeamIsolated": true, "backupsVerified": true, "purpleTeamPlanned": true, "remediationOwners": true }
+}

@@ -1,0 +1,18 @@
+{
+  "entity": "Banco Ejemplo S.A.",
+  "notification": "2027-02-01",
+  "lastTlptEnd": null,
+  "completedTests": 2,
+  "internalTesters": true,
+  "criticalFunctions": [
+    { "name": "Retail payments", "systems": ["payments-hub", "card-switch"], "thirdParties": ["CloudCo"] },
+    { "name": "Online banking", "systems": ["web-banking", "idp"], "thirdParties": ["CloudCo", "AuthSaaS"] },
+    { "name": "Treasury settlement", "systems": [], "thirdParties": [] }
+  ],
+  "thirdParties": [
+    { "name": "CloudCo", "critical": true, "inScope": true, "contractAllowsTesting": false, "pooledTestingPossible": true },
+    { "name": "AuthSaaS", "critical": false, "inScope": true, "contractAllowsTesting": false, "pooledTestingPossible": false }
+  ],
+  "readiness": { "controlTeamLead": true, "projectCharter": true, "criticalFunctionsMapped": true, "blueTeamIsolated": true },
+  "planning": { "procurementWeeks": 10, "tiWeeks": 10, "redTeamWeeks": 14, "approvalWeeks": 3, "attestationWeeks": 4 }
+}

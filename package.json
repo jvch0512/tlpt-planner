@@ -1,0 +1,17 @@
+{
+  "name": "tlpt-planner",
+  "version": "1.0.0",
+  "description": "DORA TLPT planner: dated schedule from the RTS 2025/1190 phases, readiness checklist and cycle checks",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "tlpt-planner": "dist/src/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/src/server-main.js",
+    "test": "tsc && node --test dist/test/*.test.js"
+  },
+  "repository": "github:jvch0512/tlpt-planner",
+  "keywords": ["dora", "tlpt", "tiber-eu", "red-team", "purple-team", "compliance", "typescript"],
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" },
+  "engines": { "node": ">=20" }
+}
