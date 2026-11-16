@@ -12,6 +12,6 @@
   },
   "repository": "github:jvch0512/tlpt-planner",
   "keywords": ["dora", "tlpt", "tiber-eu", "red-team", "purple-team", "compliance", "typescript"],
-  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" },
+  "devDependencies": { "@types/node": "^26.6.6", "typescript": "^7.0.2" },
   "engines": { "node": ">=20" }
 }
